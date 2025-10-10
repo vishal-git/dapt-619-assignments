@@ -2,33 +2,38 @@
 ## Due date: November 4th, 2025 11:59 PM
 
 ### Setup
-1. Create a fork of the course repository from: `https://github.com/vishal-git/dapt-619`.
-2. Create a **feature branch** for your work. 
-3. Add a `README.md` file using the `touch` command in your terminal. Add your first and last name to this file using the `echo` command with `>`. Also append the current date to the file. (The exact date doesn't matter.)
-4. Create a **Python virtual environment** for your work. Activate it. [You can verify that you're using the Python executable from your virtual environment by running `which python` or `where python`.]
-5. Install all Python dependencies using the provided `requirements.txt`.
+1. Create a fork of the course repository from: `https://github.com/vishal-git/dapt-619`. 
+2. Clone your fork locally and change into the project directory.
+```
+git clone https://github.com/<your-username>/dapt-619.git
+cd dapt-619
+```
+3. Create a **feature branch** for your work. 
+4. Add a `README.md` file using the `touch` command in your terminal. Add your first and last name to this file using the `echo` command with `>`. Also append the current date to the file. (The exact date doesn't matter.)
+5. Create a **Python virtual environment** for your work. Activate it. [You can verify that you're using the Python executable from your virtual environment by running `which python` or `where python`.]
+6. Install all Python dependencies using the provided `requirements.txt`.
 
 ### Scoring Script
-6. A Linear Regression model has been trained using `eruptions` as the *independent* variable and `waiting` as the *dependent* (target) variable. Review the code in `./src/simple_linear_demo.py`. The saved model is available in the `./models/` directory.
+7. A Linear Regression model has been trained using `eruptions` as the *independent* variable and `waiting` as the *dependent* (target) variable. Review the code in `./src/simple_linear_demo.py`. The saved model is available in the `./models/` directory.
 Write a scoring script that reads the Geyser dataset, scores it using the model artifact, and exports the scored dataset to a new `./data/scored/` folder.
-7. Check which files are being tracked using `git status`, and then add the scoring script to Git using `git add`.
-8. If the Python virtual environment folder (e.g., `venv`) shows up as a tracked folder, follow these steps:
+8. Check which files are being tracked using `git status`, and then add the scoring script to Git using `git add`.
+9. If the Python virtual environment folder (e.g., `venv`) shows up as a tracked folder, follow these steps:
     a) Create a file named `.gitignore`.
     b) Add that folder name to it using the `echo` command. 
     c) If you run `git status` again, the virtual environment folder won't show up as a tracked file.
     d) Stage the `.gitignore` file using `git add`.
-9. Run this script with the `python` command and export the scored dataset with three columns: two columns from the original dataset and one additional column that contains the predictions.
-10. Add the scored dataset to Git.
-11. Commit your changes to the Git repository. Write a meaningful commit message. This commit should include the scoring script, the scored dataset, and the `.gitignore` file (if created in step 8). 
-12. Push your changes to the remote branch.
+10. Run this script with the `python` command and export the scored dataset with three columns: two columns from the original dataset and one additional column that contains the predictions.
+11. Add the scored dataset to Git.
+12. Commit your changes to the Git repository. Write a meaningful commit message. This commit should include the scoring script, the scored dataset, and the `.gitignore` file (if created in step 9). 
+13. Push your changes to the remote branch.
 
 ### Plotting
-13. Modify your scoring script to add some code that creates a plot between actual vs. predicted waiting times. Use your choice of Python package for plotting. Install the package of your choice and update `requirements.txt` file accordingly.[Hint: Use `pip freeze`.]
-14. Save the figure as `geyser_predictions.png` in a `plots/` folder.
-15. Commit and push your changes to the remote branch. 
+14. Modify your scoring script to add some code that creates a plot between actual vs. predicted waiting times. Use your choice of Python package for plotting. Install the package of your choice and update `requirements.txt` file accordingly.[Hint: Use `pip freeze`.]
+15. Save the figure as `geyser_predictions.png` in a `plots/` folder.
+16. Commit and push your changes to the remote branch. 
 
 ### Unit Testing
-16. Write a test function to ensure the scoring process works correctly. Include three separate `assert` statements:
+17. Write a test function to ensure the scoring process works correctly. Include three separate `assert` statements:
     a) The number of predicted values must match the number of input values for `eruptions`.
     b) All predicted values must be finite (not NaN or inf).
     c) All predicted values must be positive (greater than zero).
@@ -40,10 +45,10 @@ Use the three values provided in the code below for these checks.
     df = pd.DataFrame({"eruptions": [1.5, 2.0, 3.0]})
     preds = pipeline.predict(df[["eruptions"]])
 ```
-17. Install `pytest` in your Python virtual environment.
-18. Update `requirements.txt` to include `pytest`. 
-19. Run the tests with `pytest` and make sure the test passes. Note: I only need the unit test code; I do not need to see the output. I will run the tests on my computer to verify that they work as expected.
-20. Push all files created from steps 16 through 20 to the remote branch.
+18. Install `pytest` in your Python virtual environment.
+19. Update `requirements.txt` to include `pytest`. 
+20. Run the tests with `pytest` and make sure the test passes. Note: I only need the unit test code; I do not need to see the output. I will run the tests on my computer to verify that they work as expected.
+21. Push all files created from steps 17 through 21 to the remote branch.
 
 Finally, don't forget to `deactivate` your Python virtual environment!
 
