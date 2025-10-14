@@ -2,11 +2,19 @@
 ## Due date: November 4th, 2025 11:59 PM
 
 ### Setup
-1. Create a fork of the course repository from: `https://github.com/vishal-git/dapt-619`. 
-2. Clone your fork locally and change into the project directory.
+1. Open the assignments repo by clicking on this link: https://github.com/vishal-git/dapt-619-assignments 
+2. Click **Use this template** to create a new repository. In the form:
+    a) Owner: pick *your* GitHub account.
+    b) Repository name: `dapt-619-hw1-<lastname>` (e.g., `dapt619-hw1-patel`)
+    c) Description: optional
+    d) Visibility: Private or Public
+    e) Include all branches: Leave unchecked. 
+Click **Create repository from template**.
+On the new repo page, click **Code -> HTTPS** and copy the URL.
+In a terminal run the following:
 ```
-git clone https://github.com/<your-username>/dapt-619.git
-cd dapt-619
+git clone https://github.com/<your-username>/dapt-619-<lastname>.git
+cd dapt-619-<lastname>
 ```
 3. Create a **feature branch** for your work. 
 4. Add a `README.md` file using the `touch` command in your terminal. Add your first and last name to this file using the `echo` command with `>`. Also append the current date to the file. (The exact date doesn't matter.)
