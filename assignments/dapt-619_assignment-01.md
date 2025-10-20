@@ -1,5 +1,5 @@
 # DAPT-619 Assignment 1
-## Due date: November 4th, 2025 11:59 PM
+## Due date: November 11th, 2025 11:59 PM
 
 ### Setup
 1. Open the assignments repo by clicking on this link: https://github.com/vishal-git/dapt-619-assignments 
