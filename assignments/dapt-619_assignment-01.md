@@ -3,15 +3,15 @@
 
 ### Setup
 1. Open the assignments repo by clicking on this link: https://github.com/vishal-git/dapt-619-assignments 
-2. Click **Use this template** to create a new repository. In the form:
-    a) Owner: pick *your* GitHub account.
-    b) Repository name: `dapt-619-hw1-<lastname>` (e.g., `dapt619-hw1-patel`)
-    c) Description: optional
-    d) Visibility: Private or Public
-    e) Include all branches: Leave unchecked. 
-Click **Create repository from template**.
-On the new repo page, click **Code -> HTTPS** and copy the URL.
-In a terminal run the following:
+2. Click **Use this template** to create a new repository. In the form:  
+    a) Owner: pick *your* GitHub account.  
+    b) Repository name: `dapt-619-hw1-<lastname>` (e.g., `dapt619-hw1-patel`)  
+    c) Description: optional  
+    d) Visibility: Private or Public  
+    e) Include all branches: Leave unchecked.   
+Click **Create repository from template**.  
+On the new repo page, click **Code -> HTTPS** and copy the URL.  
+In a terminal run the following:  
 ```
 git clone https://github.com/<your-username>/dapt-619-<lastname>.git
 cd dapt-619-<lastname>
@@ -25,11 +25,11 @@ cd dapt-619-<lastname>
 7. A Linear Regression model has been trained using `eruptions` as the *independent* variable and `waiting` as the *dependent* (target) variable. Review the code in `./src/simple_linear_demo.py`. The saved model is available in the `./models/` directory.
 Write a scoring script that reads the Geyser dataset, scores it using the model artifact, and exports the scored dataset to a new `./data/scored/` folder.
 8. Check which files are being tracked using `git status`, and then add the scoring script to Git using `git add`.
-9. If the Python virtual environment folder (e.g., `venv`) shows up as a tracked folder, follow these steps:
-    a) Create a file named `.gitignore`.
-    b) Add that folder name to it using the `echo` command. 
-    c) If you run `git status` again, the virtual environment folder won't show up as a tracked file.
-    d) Stage the `.gitignore` file using `git add`.
+9. If the Python virtual environment folder (e.g., `venv`) shows up as a tracked folder, follow these steps:  
+    a) Create a file named `.gitignore`.  
+    b) Add that folder name to it using the `echo` command.   
+    c) If you run `git status` again, the virtual environment folder won't show up as a tracked file.  
+    d) Stage the `.gitignore` file using `git add`.  
 10. Run this script with the `python` command and export the scored dataset with three columns: two columns from the original dataset and one additional column that contains the predictions.
 11. Add the scored dataset to Git.
 12. Commit your changes to the Git repository. Write a meaningful commit message. This commit should include the scoring script, the scored dataset, and the `.gitignore` file (if created in step 9). 
@@ -42,9 +42,9 @@ Write a scoring script that reads the Geyser dataset, scores it using the model 
 
 ### Unit Testing
 17. Write a test function to ensure the scoring process works correctly. Include three separate `assert` statements:
-    a) The number of predicted values must match the number of input values for `eruptions`.
-    b) All predicted values must be finite (not NaN or inf).
-    c) All predicted values must be positive (greater than zero).
+    a) The number of predicted values must match the number of input values for `eruptions`.  
+    b) All predicted values must be finite (not NaN or inf).  
+    c) All predicted values must be positive (greater than zero).  
 Write a single unit test function that includes these checks. Save the unit test as `test_scoring.py` inside a `tests/` folder.
 Use the three values provided in the code below for these checks.
 ```
