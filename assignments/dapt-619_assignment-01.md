@@ -41,7 +41,7 @@ Write a scoring script that reads the Geyser dataset, scores it using the model 
 16. Commit and push your changes to the remote branch. 
 
 ### Unit Testing
-17. Write a test function to ensure the scoring process works correctly. Include three separate `assert` statements:
+17. Write a test function to ensure the scoring process works correctly. Include three separate `assert` statements:  
     a) The number of predicted values must match the number of input values for `eruptions`.  
     b) All predicted values must be finite (not NaN or inf).  
     c) All predicted values must be positive (greater than zero).  
