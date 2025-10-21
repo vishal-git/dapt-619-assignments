@@ -60,10 +60,10 @@ Use the three values provided in the code below for these checks.
 
 Finally, don't forget to `deactivate` your Python virtual environment!
 
-Here's a short submission checklist for your reference:
-[ ] `README.md` includes name and date
-[ ] Virtual environment created and activated
-[ ] Scoring script runs without error
-[ ] Scoring outputs (scored dataset and plot) are generated
-[ ] Unit test file created and passes all tests
-[ ] All changes (except for the virtual environment folder) committed and pushed to remote branch
+Here's a short submission checklist for your reference:  
+[ ] `README.md` includes name and date  
+[ ] Virtual environment created and activated  
+[ ] Scoring script runs without error  
+[ ] Scoring outputs (scored dataset and plot) are generated  
+[ ] Unit test file created and passes all tests  
+[ ] All changes (except for the virtual environment folder) committed and pushed to remote branch  
